@@ -10,4 +10,6 @@ app.use("/api/image", imageRoute);
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server running");
+app.get("/", (req, res) => {
+  res.send("AI Pro Max Ultra сервер работает 🚀");
 });
